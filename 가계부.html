@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>가계부</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f5f5f3;
+      color: #1a1a18;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+    h1 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: #1a1a18;
+    }
+    .container { max-width: 780px; margin: 0 auto; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+    .card {
+      background: #ffffff;
+      border: 0.5px solid #d3d1c7;
+      border-radius: 12px;
+      padding: 1.25rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .card-label {
+      font-size: 12px;
+      color: #888780;
+      font-weight: 500;
+    }
+    select, input[type=number], input[type=date] {
+      width: 100%;
+      font-size: 14px;
+      color: #1a1a18;
+      background: #f5f5f3;
+      border: 0.5px solid #b4b2a9;
+      border-radius: 8px;
+      padding: 8px 10px;
+      outline: none;
+      appearance: auto;
+    }
+    select:focus, input:focus {
+      box-shadow: 0 0 0 2px #b5d4f4;
+      border-color: #378add;
+    }
+    select.error, input.error {
+      border-color: #e24b4a;
+      box-shadow: 0 0 0 2px #f7c1c1;
+    }
+    .error-msg {
+      font-size: 12px;
+      color: #a32d2d;
+      min-height: 16px;
+      margin-top: -4px;
+    }
+    .total-box {
+      background: #e6f1fb;
+      border: 0.5px solid #b5d4f4;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 88px;
+      gap: 6px;
+    }
+    .total-label { font-size: 12px; color: #185fa5; font-weight: 500; }
+    .total-amount { font-size: 22px; font-weight: 500; color: #185fa5; }
+    .btn-row { display: flex; gap: 8px; margin-bottom: 0; }
+    .add-btn {
+      flex: 1;
+      padding: 10px;
+      background: #ffffff;
+      border: 0.5px solid #b4b2a9;
+      border-radius: 8px;
+      color: #1a1a18;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .add-btn:hover { background: #f5f5f3; }
+    .reset-btn {
+      padding: 10px 16px;
+      background: #ffffff;
+      border: 0.5px solid #f09595;
+      border-radius: 8px;
+      color: #a32d2d;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .reset-btn:hover { background: #fcebeb; }
+    .history { margin-top: 1rem; display: flex; flex-direction: column; gap: 8px; }
+    .history-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f5f5f3;
+      border: 0.5px solid #d3d1c7;
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-size: 13px;
+      color: #5f5e5a;
+    }
+    .history-item .meta { display: flex; flex-direction: column; gap: 2px; }
+    .history-item .meta-main { color: #1a1a18; }
+    .history-item .meta-date { font-size: 11px; color: #888780; }
+    .history-item .right { display: flex; align-items: center; gap: 8px; }
+    .history-item .amount { color: #1a1a18; font-weight: 500; }
+    .history-item .del { cursor: pointer; color: #888780; font-size: 18px; line-height: 1; }
+    .history-item .del:hover { color: #a32d2d; }
+    .empty-msg { text-align: center; color: #888780; font-size: 13px; padding: 2rem 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>가계부</h1>
+    <div class="grid">
+      <div class="card">
+        <span class="card-label">결제수단</span>
+        <select id="sel-source">
+          <option value="">선택하세요</option>
+          <option>쿠팡</option>
+          <option>탐나는전</option>
+          <option>현대카드</option>
+          <option>기업은행</option>
+        </select>
+        <span class="error-msg" id="err-source"></span>
+      </div>
+      <div class="card">
+        <span class="card-label">금액</span>
+        <input type="number" id="inp-amount" placeholder="0" min="0" step="1" />
+        <span class="error-msg" id="err-amount"></span>
+      </div>
+      <div class="card">
+        <span class="card-label">카테고리</span>
+        <select id="sel-cat">
+          <option value="">선택하세요</option>
+          <option>생활비</option>
+          <option>식비</option>
+          <option>차량관리비</option>
+          <option>커피 및 간식</option>
+        </select>
+        <span class="error-msg" id="err-cat"></span>
+      </div>
+      <div class="card">
+        <span class="card-label">누적 합산</span>
+        <div class="total-box">
+          <span class="total-label">총 지출</span>
+          <span class="total-amount" id="total-display">₩0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom: 1rem;">
+      <span class="card-label">날짜</span>
+      <input type="date" id="inp-date" />
+    </div>
+
+    <div class="btn-row">
+      <button class="add-btn" onclick="addEntry()">
+        <i class="ti ti-plus" aria-hidden="true"></i> 항목 추가
+      </button>
+      <button class="reset-btn" onclick="resetAll()">
+        <i class="ti ti-trash" aria-hidden="true"></i> 전체 초기화
+      </button>
+    </div>
+
+    <div class="history" id="history"></div>
+  </div>
+
+  <script>
+    let entries = JSON.parse(localStorage.getItem('가계부') || '[]');
+
+    function save() {
+      localStorage.setItem('가계부', JSON.stringify(entries));
+    }
+
+    function getTotal() {
+      return entries.reduce((sum, e) => sum + e.amount, 0);
+    }
+
+    function fmt(n) {
+      return '₩' + Math.round(n).toLocaleString('ko-KR');
+    }
+
+    function today() {
+      return new Date().toISOString().slice(0, 10);
+    }
+
+    function render() {
+      document.getElementById('total-display').textContent = fmt(getTotal());
+      const h = document.getElementById('history');
+      h.innerHTML = '';
+
+      if (entries.length === 0) {
+        const empty = document.createElement('p');
+        empty.className = 'empty-msg';
+        empty.textContent = '아직 항목이 없습니다. 위에서 추가해보세요.';
+        h.appendChild(empty);
+        return;
+      }
+
+      entries.slice().reverse().forEach((e, ri) => {
+        const i = entries.length - 1 - ri;
+        const div = document.createElement('div');
+        div.className = 'history-item';
+
+        const meta = document.createElement('div');
+        meta.className = 'meta';
+
+        const main = document.createElement('span');
+        main.className = 'meta-main';
+        main.textContent = `${e.source} · ${e.cat}`;
+
+        const dateEl = document.createElement('span');
+        dateEl.className = 'meta-date';
+        dateEl.textContent = e.date || '';
+
+        meta.appendChild(main);
+        meta.appendChild(dateEl);
+
+        const right = document.createElement('div');
+        right.className = 'right';
+
+        const amountSpan = document.createElement('span');
+        amountSpan.className = 'amount';
+        amountSpan.textContent = fmt(e.amount);
+
+        const del = document.createElement('span');
+        del.className = 'del';
+        del.title = '삭제';
+        del.textContent = '×';
+        del.onclick = () => removeEntry(i);
+
+        right.appendChild(amountSpan);
+        right.appendChild(del);
+        div.appendChild(meta);
+        div.appendChild(right);
+        h.appendChild(div);
+      });
+    }
+
+    function clearErrors() {
+      ['sel-source', 'inp-amount', 'sel-cat'].forEach(id => {
+        document.getElementById(id).classList.remove('error');
+      });
+      ['err-source', 'err-amount', 'err-cat'].forEach(id => {
+        document.getElementById(id).textContent = '';
+      });
+    }
+
+    function addEntry() {
+      clearErrors();
+      const source = document.getElementById('sel-source').value;
+      const amount = parseFloat(document.getElementById('inp-amount').value);
+      const cat = document.getElementById('sel-cat').value;
+      const date = document.getElementById('inp-date').value || today();
+
+      let valid = true;
+      if (!source) {
+        document.getElementById('sel-source').classList.add('error');
+        document.getElementById('err-source').textContent = '결제수단을 선택하세요';
+        valid = false;
+      }
+      if (isNaN(amount) || amount <= 0) {
+        document.getElementById('inp-amount').classList.add('error');
+        document.getElementById('err-amount').textContent = '금액을 입력하세요';
+        valid = false;
+      }
+      if (!cat) {
+        document.getElementById('sel-cat').classList.add('error');
+        document.getElementById('err-cat').textContent = '카테고리를 선택하세요';
+        valid = false;
+      }
+      if (!valid) return;
+
+      entries.push({ source, amount, cat, date });
+      save();
+      document.getElementById('sel-source').value = '';
+      document.getElementById('inp-amount').value = '';
+      document.getElementById('sel-cat').value = '';
+      document.getElementById('inp-date').value = '';
+      render();
+    }
+
+    function removeEntry(i) {
+      entries.splice(i, 1);
+      save();
+      render();
+    }
+
+    function resetAll() {
+      if (!confirm('모든 항목을 삭제하시겠습니까?')) return;
+      entries = [];
+      save();
+      render();
+    }
+
+    document.getElementById('inp-date').value = today();
+    render();
+  </script>
+</body>
+</html>
