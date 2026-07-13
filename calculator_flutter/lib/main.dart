@@ -61,6 +61,14 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
     });
   }
 
+  void _onClearPressed() {
+    setState(() {
+      _expression = '';
+      _result = '0';
+      _justEvaluated = false;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -84,6 +92,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     const SizedBox(height: 8),
                     Text(
                       _result,
+                      key: const Key('result'),
                       style: const TextStyle(
                         color: Colors.white,
                         fontSize: 56,
@@ -102,6 +111,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                 padding: const EdgeInsets.all(12),
                 child: Column(
                   children: [
+                    _buttonRow(['C']),
                     _buttonRow(['7', '8', '9']),
                     _buttonRow(['4', '5', '6']),
                     _buttonRow(['1', '2', '3']),
@@ -124,19 +134,26 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
 
   Widget _buildButton(String label) {
     final isOperator = label == '+' || label == '=';
+    final isClear = label == 'C';
     return Expanded(
       child: Padding(
         padding: const EdgeInsets.all(6),
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
-            backgroundColor: isOperator ? Colors.orange : Colors.grey[850],
+            backgroundColor: isClear
+                ? Colors.redAccent
+                : isOperator
+                    ? Colors.orange
+                    : Colors.grey[850],
             foregroundColor: Colors.white,
             shape: const CircleBorder(),
             padding: EdgeInsets.zero,
             textStyle: const TextStyle(fontSize: 28),
           ),
           onPressed: () {
-            if (label == '+') {
+            if (label == 'C') {
+              _onClearPressed();
+            } else if (label == '+') {
               _onPlusPressed();
             } else if (label == '=') {
               _onEqualsPressed();

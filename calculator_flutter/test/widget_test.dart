@@ -16,4 +16,17 @@ void main() {
 
     expect(find.text('15'), findsOneWidget);
   });
+
+  testWidgets('Clear button resets the expression and result', (WidgetTester tester) async {
+    await tester.pumpWidget(const CalculatorApp());
+
+    await tester.tap(find.widgetWithText(ElevatedButton, '1'));
+    await tester.tap(find.widgetWithText(ElevatedButton, '+'));
+    await tester.tap(find.widgetWithText(ElevatedButton, '2'));
+    await tester.tap(find.widgetWithText(ElevatedButton, 'C'));
+    await tester.pump();
+
+    expect(tester.widget<Text>(find.byKey(const Key('result'))).data, '0');
+    expect(find.text('1+2'), findsNothing);
+  });
 }
