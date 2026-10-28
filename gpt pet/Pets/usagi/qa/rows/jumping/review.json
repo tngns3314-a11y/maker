@@ -1,0 +1,97 @@
+{
+  "ok": true,
+  "frames_root": "/Users/soonkim/maker/gpt pet/Pets/usagi/qa/rows/jumping/frames",
+  "states": [
+    "jumping"
+  ],
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "jumping",
+      "expected_frames": 5,
+      "actual_frames": 5,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi/qa/rows/jumping/frames/jumping/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11978,
+          "bbox": [
+            42,
+            38,
+            150,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 54
+        },
+        {
+          "index": 1,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi/qa/rows/jumping/frames/jumping/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11718,
+          "bbox": [
+            42,
+            25,
+            150,
+            188
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 54
+        },
+        {
+          "index": 2,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi/qa/rows/jumping/frames/jumping/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11832,
+          "bbox": [
+            42,
+            5,
+            150,
+            165
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 38
+        },
+        {
+          "index": 3,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi/qa/rows/jumping/frames/jumping/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11734,
+          "bbox": [
+            42,
+            25,
+            150,
+            187
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 47
+        },
+        {
+          "index": 4,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi/qa/rows/jumping/frames/jumping/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 12065,
+          "bbox": [
+            42,
+            38,
+            150,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 59
+        }
+      ]
+    }
+  ]
+}

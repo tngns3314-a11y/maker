@@ -1,0 +1,16 @@
+<resources>
+    <color name="icon_background">#20283F</color>
+    <style name="ShiftTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#315FCE</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowBackground">#FAFAF7</item>
+        <item name="android:navigationBarColor">#FAFAF7</item>
+        <item name="android:statusBarColor">#FAFAF7</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+    <string name="widget_description">오늘과 내일 근무를 보여주고 오늘 내용이 있으면 가운데 표시하는 4×1 위젯</string>
+    <string name="widget_vertical_description">오늘과 내일 근무를 위아래에 보여주고 오늘 내용이 있으면 가운데 표시하는 1×4 위젯</string>
+<string name="widget_calendar_description">월간 근무는 원, 일정은 파란 네모, 공휴일은 빨간 네모로 표시합니다</string>
+</resources>

@@ -1,0 +1,371 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/widget_root" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="6dp" android:background="@drawable/widget_bg">
+  <LinearLayout android:layout_width="match_parent" android:layout_height="22dp" android:gravity="center_vertical">
+    <TextView android:id="@+id/cal_prev" android:layout_width="32dp" android:layout_height="match_parent" android:text="‹" android:textSize="14sp" android:textStyle="bold" android:textColor="#FFFFFF" android:gravity="center" />
+    <TextView android:id="@+id/cal_month" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="월간 근무" android:textSize="14sp" android:textStyle="bold" android:textColor="#FFFFFF" android:gravity="center" />
+    <TextView android:id="@+id/cal_next" android:layout_width="32dp" android:layout_height="match_parent" android:text="›" android:textSize="14sp" android:textStyle="bold" android:textColor="#FFFFFF" android:gravity="center" />
+    <TextView android:id="@+id/cal_today" android:layout_width="40dp" android:layout_height="match_parent" android:text="오늘" android:textSize="14sp" android:textStyle="bold" android:textColor="#FFFFFF" android:gravity="center" />
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent" android:layout_height="20dp">
+    <TextView android:id="@+id/cal_week_0" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:text="일" android:textSize="10sp" android:gravity="center" android:textColor="#CBD4E9" android:includeFontPadding="false" android:maxLines="1" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="8sp" android:autoSizeMaxTextSize="10sp" android:autoSizeStepGranularity="1sp" />
+    <TextView android:id="@+id/cal_week_1" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:text="월" android:textSize="10sp" android:gravity="center" android:textColor="#CBD4E9" android:includeFontPadding="false" android:maxLines="1" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="8sp" android:autoSizeMaxTextSize="10sp" android:autoSizeStepGranularity="1sp" />
+    <TextView android:id="@+id/cal_week_2" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:text="화" android:textSize="10sp" android:gravity="center" android:textColor="#CBD4E9" android:includeFontPadding="false" android:maxLines="1" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="8sp" android:autoSizeMaxTextSize="10sp" android:autoSizeStepGranularity="1sp" />
+    <TextView android:id="@+id/cal_week_3" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:text="수" android:textSize="10sp" android:gravity="center" android:textColor="#CBD4E9" android:includeFontPadding="false" android:maxLines="1" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="8sp" android:autoSizeMaxTextSize="10sp" android:autoSizeStepGranularity="1sp" />
+    <TextView android:id="@+id/cal_week_4" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:text="목" android:textSize="10sp" android:gravity="center" android:textColor="#CBD4E9" android:includeFontPadding="false" android:maxLines="1" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="8sp" android:autoSizeMaxTextSize="10sp" android:autoSizeStepGranularity="1sp" />
+    <TextView android:id="@+id/cal_week_5" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:text="금" android:textSize="10sp" android:gravity="center" android:textColor="#CBD4E9" android:includeFontPadding="false" android:maxLines="1" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="8sp" android:autoSizeMaxTextSize="10sp" android:autoSizeStepGranularity="1sp" />
+    <TextView android:id="@+id/cal_week_6" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:text="토" android:textSize="10sp" android:gravity="center" android:textColor="#CBD4E9" android:includeFontPadding="false" android:maxLines="1" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="8sp" android:autoSizeMaxTextSize="10sp" android:autoSizeStepGranularity="1sp" />
+  </LinearLayout>
+  <TextView android:id="@+id/cal_line_0" android:layout_width="match_parent" android:layout_height="1dp" android:background="#46516B" android:importantForAccessibility="no" />
+  <LinearLayout android:id="@+id/cal_row_0" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+    <LinearLayout android:id="@+id/cal_day_0" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_0" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_0" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_0" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_0" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_1" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_1" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_1" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_1" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_1" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_2" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_2" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_2" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_2" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_2" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_3" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_3" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_3" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_3" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_3" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_4" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_4" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_4" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_4" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_4" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_5" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_5" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_5" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_5" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_5" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_6" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_6" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_6" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_6" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_6" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+  </LinearLayout>
+  <TextView android:id="@+id/cal_line_1" android:layout_width="match_parent" android:layout_height="1dp" android:background="#46516B" android:importantForAccessibility="no" />
+  <LinearLayout android:id="@+id/cal_row_1" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+    <LinearLayout android:id="@+id/cal_day_7" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_7" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_7" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_7" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_7" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_8" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_8" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_8" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_8" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_8" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_9" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_9" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_9" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_9" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_9" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_10" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_10" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_10" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_10" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_10" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_11" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_11" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_11" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_11" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_11" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_12" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_12" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_12" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_12" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_12" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_13" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_13" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_13" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_13" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_13" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+  </LinearLayout>
+  <TextView android:id="@+id/cal_line_2" android:layout_width="match_parent" android:layout_height="1dp" android:background="#46516B" android:importantForAccessibility="no" />
+  <LinearLayout android:id="@+id/cal_row_2" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+    <LinearLayout android:id="@+id/cal_day_14" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_14" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_14" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_14" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_14" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_15" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_15" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_15" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_15" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_15" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_16" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_16" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_16" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_16" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_16" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_17" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_17" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_17" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_17" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_17" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_18" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_18" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_18" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_18" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_18" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_19" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_19" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_19" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_19" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_19" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_20" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_20" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_20" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_20" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_20" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+  </LinearLayout>
+  <TextView android:id="@+id/cal_line_3" android:layout_width="match_parent" android:layout_height="1dp" android:background="#46516B" android:importantForAccessibility="no" />
+  <LinearLayout android:id="@+id/cal_row_3" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+    <LinearLayout android:id="@+id/cal_day_21" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_21" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_21" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_21" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_21" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_22" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_22" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_22" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_22" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_22" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_23" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_23" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_23" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_23" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_23" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_24" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_24" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_24" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_24" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_24" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_25" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_25" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_25" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_25" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_25" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_26" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_26" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_26" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_26" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_26" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_27" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_27" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_27" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_27" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_27" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+  </LinearLayout>
+  <TextView android:id="@+id/cal_line_4" android:layout_width="match_parent" android:layout_height="1dp" android:background="#46516B" android:importantForAccessibility="no" />
+  <LinearLayout android:id="@+id/cal_row_4" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+    <LinearLayout android:id="@+id/cal_day_28" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_28" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_28" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_28" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_28" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_29" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_29" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_29" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_29" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_29" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_30" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_30" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_30" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_30" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_30" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_31" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_31" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_31" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_31" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_31" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_32" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_32" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_32" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_32" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_32" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_33" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_33" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_33" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_33" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_33" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_34" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_34" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_34" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_34" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_34" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+  </LinearLayout>
+  <TextView android:id="@+id/cal_line_5" android:layout_width="match_parent" android:layout_height="1dp" android:background="#46516B" android:importantForAccessibility="no" />
+  <LinearLayout android:id="@+id/cal_row_5" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+    <LinearLayout android:id="@+id/cal_day_35" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_35" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_35" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_35" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_35" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_36" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_36" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_36" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_36" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_36" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_37" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_37" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_37" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_37" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_37" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_38" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_38" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_38" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_38" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_38" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_39" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_39" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_39" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_39" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_39" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_40" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_40" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_40" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_40" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_40" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cal_day_41" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+      <TextView android:id="@+id/cal_num_41" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.50" android:gravity="center" android:textStyle="bold" android:textSize="14sp" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="5sp" android:autoSizeMaxTextSize="14sp" android:autoSizeStepGranularity="1sp" android:includeFontPadding="false" android:maxLines="1" android:importantForAccessibility="no" />
+      <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25" android:gravity="center" android:layout_marginLeft="1dp" android:layout_marginRight="1dp">
+        <TextView android:id="@+id/cal_note_41" android:layout_width="0dp" android:layout_height="match_parent" android:background="#387EEB" android:importantForAccessibility="no" android:layout_weight="1" />
+        <TextView android:id="@+id/cal_holiday_41" android:layout_width="0dp" android:layout_height="match_parent" android:background="#E15B67" android:importantForAccessibility="no" android:layout_weight="1" />
+      </LinearLayout>
+      <ImageView android:id="@+id/cal_badge_41" android:layout_width="11dp" android:layout_height="0dp" android:layout_weight="0.25" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

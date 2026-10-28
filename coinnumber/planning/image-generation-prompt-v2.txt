@@ -1,0 +1,15 @@
+Use case: ui-mockup. Redesign attached Korean gacha calculator concept into ONE minimal mobile screen. Input image is the edit target for redesign; preserve app name and calculation meanings, replace four-phone complex composition with a single large front-on Android phone on a neutral offwhite background, portrait image. White app surface, near-black type, thin pale-gray dividers. No blue anywhere, no gradients, no 3D art, no bottom navigation, no large decorative cards. Spacious but compact professional Korean typography. All content fits one screen.
+Header "뽑기 계산기", small "기록 · 도움말" text action.
+One horizontal row of THREE equal numeric fields with labels above: "확률" value "1 %" | "1회 비용" value "3,000 원" | "천장" value "200 회".
+Small checked checkbox line "목표 캐릭터 확정 천장". A slim dark charcoal fullwidth button "계산하기".
+White result region, label "천장 적용 최대 비용", large dark text "600,000원", caption "최대 200회 · 목표 캐릭터 확정".
+Two small aligned rows: "평균 예상 비용" / "약 259,806원"; "천장 없이 99% 도달" / "1,377,000원". Tiny "99%는 획득 보장이 아니에요."
+Thin divider. Heading "이 돈이면 얼마나 먹을까?" small caption "최대 비용 600,000원 기준".
+Five clean compact food comparison rows with only small outline food icons optionally, name left and quantity right, unit price secondary:
+"치킨" "25,000원 / 마리" "24마리"
+"족발" "40,000원 / 접시" "15접시"
+"냉면" "12,000원 / 그릇" "50그릇"
+"순대국밥" "10,000원 / 그릇" "60그릇"
+"햄버거" "6,000원 / 개" "100개"
+Footer note readable: "임시 예시 단가 · 소수점 버림" then "2025년 기준 가격은 추후 입력".
+This is a design concept, not statistics. Exact Korean spelling and arithmetic essential. One phone only, entire screen visible.

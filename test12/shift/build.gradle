@@ -1,0 +1,16 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.soon.shiftwork'
+    compileSdk 36
+    defaultConfig {
+        applicationId 'com.soon.shiftwork'
+        minSdk 26
+        targetSdk 36
+        versionCode 12
+        versionName '1.11'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}

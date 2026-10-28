@@ -1,0 +1,12 @@
+{
+  "id": "pet_6add7180c6b081918cae467ee2d963a3",
+  "name": "우사기",
+  "is_custom": true,
+  "is_active": true,
+  "verified_in_list": true,
+  "updated_face": true,
+  "sha256": "9cb3d9519ddf9dea4f3448118bbc1b64b10b5a21fe9e3365cc22b985cb3131f1",
+  "sprite_version": 2,
+  "prior_artifacts": "../usagi",
+  "artifact_location": "local workspace; Library tools unavailable"
+}

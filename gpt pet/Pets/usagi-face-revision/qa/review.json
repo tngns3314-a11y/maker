@@ -1,0 +1,973 @@
+{
+  "ok": true,
+  "frames_root": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames",
+  "states": [
+    "idle",
+    "running-right",
+    "running-left",
+    "waving",
+    "jumping",
+    "failed",
+    "waiting",
+    "running",
+    "review"
+  ],
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "idle",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/idle/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11605,
+          "bbox": [
+            42,
+            41,
+            149,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/idle/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11451,
+          "bbox": [
+            43,
+            40,
+            148,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/idle/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11480,
+          "bbox": [
+            43,
+            40,
+            148,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/idle/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11377,
+          "bbox": [
+            43,
+            40,
+            148,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/idle/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11485,
+          "bbox": [
+            43,
+            40,
+            148,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/idle/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11501,
+          "bbox": [
+            43,
+            40,
+            148,
+            199
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "running-right",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/running-right/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11182,
+          "bbox": [
+            39,
+            41,
+            152,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/running-right/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10598,
+          "bbox": [
+            41,
+            41,
+            150,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/running-right/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10579,
+          "bbox": [
+            41,
+            41,
+            149,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/running-right/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10942,
+          "bbox": [
+            39,
+            36,
+            152,
+            190
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/running-right/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11131,
+          "bbox": [
+            39,
+            41,
+            152,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/running-right/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10626,
+          "bbox": [
+            41,
+            41,
+            150,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 6,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/running-right/06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10610,
+          "bbox": [
+            41,
+            42,
+            149,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 7,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/running-right/07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10991,
+          "bbox": [
+            39,
+            36,
+            152,
+            190
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "running-left",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/running-left/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11182,
+          "bbox": [
+            39,
+            41,
+            152,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/running-left/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10598,
+          "bbox": [
+            41,
+            41,
+            150,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/running-left/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10579,
+          "bbox": [
+            42,
+            41,
+            150,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/running-left/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10942,
+          "bbox": [
+            39,
+            36,
+            152,
+            190
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/running-left/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11131,
+          "bbox": [
+            39,
+            41,
+            152,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/running-left/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10626,
+          "bbox": [
+            41,
+            41,
+            150,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 6,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/running-left/06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10610,
+          "bbox": [
+            42,
+            42,
+            150,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 7,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/running-left/07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10991,
+          "bbox": [
+            39,
+            36,
+            152,
+            190
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "waving",
+      "expected_frames": 4,
+      "actual_frames": 4,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/waving/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10605,
+          "bbox": [
+            45,
+            41,
+            147,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/waving/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10636,
+          "bbox": [
+            45,
+            41,
+            147,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/waving/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10802,
+          "bbox": [
+            43,
+            41,
+            149,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/waving/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10580,
+          "bbox": [
+            45,
+            41,
+            147,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "jumping",
+      "expected_frames": 5,
+      "actual_frames": 5,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/jumping/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11153,
+          "bbox": [
+            43,
+            42,
+            148,
+            201
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/jumping/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10969,
+          "bbox": [
+            44,
+            24,
+            147,
+            186
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/jumping/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11060,
+          "bbox": [
+            43,
+            4,
+            148,
+            164
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/jumping/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10939,
+          "bbox": [
+            44,
+            29,
+            147,
+            189
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/jumping/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11157,
+          "bbox": [
+            43,
+            42,
+            148,
+            201
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "failed",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/failed/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10416,
+          "bbox": [
+            45,
+            41,
+            146,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/failed/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10278,
+          "bbox": [
+            46,
+            41,
+            145,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/failed/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10168,
+          "bbox": [
+            46,
+            44,
+            145,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/failed/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10115,
+          "bbox": [
+            41,
+            72,
+            149,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/failed/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 8812,
+          "bbox": [
+            41,
+            90,
+            150,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/failed/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 9813,
+          "bbox": [
+            45,
+            72,
+            146,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 6,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/failed/06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10292,
+          "bbox": [
+            46,
+            41,
+            145,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 7,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/failed/07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10325,
+          "bbox": [
+            46,
+            41,
+            145,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "waiting",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/waiting/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10652,
+          "bbox": [
+            45,
+            41,
+            146,
+            199
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/waiting/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10521,
+          "bbox": [
+            46,
+            40,
+            145,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/waiting/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10484,
+          "bbox": [
+            46,
+            40,
+            145,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/waiting/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10704,
+          "bbox": [
+            45,
+            41,
+            146,
+            199
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/waiting/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10539,
+          "bbox": [
+            46,
+            41,
+            145,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/waiting/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10577,
+          "bbox": [
+            46,
+            41,
+            146,
+            199
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "running",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/running/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 9901,
+          "bbox": [
+            50,
+            41,
+            143,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/running/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 9891,
+          "bbox": [
+            50,
+            41,
+            143,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/running/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 9902,
+          "bbox": [
+            50,
+            41,
+            143,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/running/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 9908,
+          "bbox": [
+            50,
+            41,
+            143,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/running/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 9903,
+          "bbox": [
+            50,
+            41,
+            143,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/running/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 9902,
+          "bbox": [
+            50,
+            41,
+            143,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "review",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/review/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11174,
+          "bbox": [
+            42,
+            42,
+            149,
+            201
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/review/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11170,
+          "bbox": [
+            43,
+            38,
+            148,
+            201
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/review/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11044,
+          "bbox": [
+            43,
+            39,
+            148,
+            201
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/review/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11369,
+          "bbox": [
+            42,
+            38,
+            149,
+            201
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/review/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11059,
+          "bbox": [
+            43,
+            43,
+            148,
+            201
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "/Users/soonkim/maker/gpt pet/Pets/usagi-face-revision/frames/review/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11136,
+          "bbox": [
+            43,
+            42,
+            148,
+            201
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    }
+  ]
+}

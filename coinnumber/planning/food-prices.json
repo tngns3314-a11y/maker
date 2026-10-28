@@ -1,0 +1,41 @@
+{
+  "referenceYear": 2025,
+  "status": "fixed_owner_provided",
+  "foods": [
+    {
+      "id": "chicken",
+      "name": "치킨",
+      "unit": "마리",
+      "priceWon": 25000,
+      "source": "앱 소유자 지정 (2026-10-24 요청)"
+    },
+    {
+      "id": "jokbal",
+      "name": "족발",
+      "unit": "접시",
+      "priceWon": 40000,
+      "source": "앱 소유자 지정 (2026-10-24 요청)"
+    },
+    {
+      "id": "naengmyeon",
+      "name": "냉면",
+      "unit": "그릇",
+      "priceWon": 17000,
+      "source": "앱 소유자 지정 (2026-10-24 요청)"
+    },
+    {
+      "id": "sundaeguk",
+      "name": "순대국밥",
+      "unit": "그릇",
+      "priceWon": 11000,
+      "source": "앱 소유자 지정 (2026-10-24 요청)"
+    },
+    {
+      "id": "burger",
+      "name": "햄버거",
+      "unit": "개",
+      "priceWon": 8000,
+      "source": "앱 소유자 지정 (2026-10-24 요청)"
+    }
+  ]
+}

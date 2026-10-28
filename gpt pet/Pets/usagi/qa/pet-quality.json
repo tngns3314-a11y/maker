@@ -1,0 +1,66 @@
+{
+  "ok": true,
+  "atlas": "/Users/soonkim/maker/gpt pet/Pets/usagi/final/spritesheet-extended.png",
+  "encoded_bytes": 2018734,
+  "sha256": "c0daa543a94b80e59028caa33bc93d9de9a300010b8b78ff0c4501026637d188",
+  "jump": {
+    "idle_baseline": 198,
+    "jump_baselines": [
+      197,
+      182,
+      159,
+      181,
+      197
+    ],
+    "airborne_lift_pixels": 38,
+    "landing_delta_pixels": 1
+  },
+  "look_registration": {
+    "neutral_center_x": 96.0,
+    "look_centers_x": [
+      95.5,
+      95.0,
+      94.5,
+      94.5,
+      95.5,
+      95.0,
+      97.0,
+      98.0,
+      94.5,
+      94.5,
+      94.0,
+      95.0,
+      95.0,
+      96.0,
+      97.0,
+      97.0
+    ],
+    "look_widths": [
+      107,
+      106,
+      105,
+      105,
+      105,
+      104,
+      102,
+      100,
+      109,
+      105,
+      104,
+      104,
+      104,
+      104,
+      104,
+      104
+    ],
+    "maximum_center_drift_pixels": 2.0,
+    "maximum_width_ratio": 1.09
+  },
+  "errors": [],
+  "warnings": [
+    "look direction 067.5 accepted with a reviewed warning",
+    "look direction 157.5 accepted with a reviewed warning",
+    "look direction 247.5 accepted with a reviewed warning",
+    "180->202.5 diff is a local outlier (2088 pixels vs neighbor average 1432)"
+  ]
+}

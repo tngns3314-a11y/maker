@@ -1,0 +1,56 @@
+{
+  "idle": {
+    "shared_row_scale": 0.7897435897435897,
+    "source_baseline": 202,
+    "target_baseline": 198,
+    "target_resting_height": 154
+  },
+  "running-right": {
+    "shared_row_scale": 0.8191489361702128,
+    "source_baseline": 201,
+    "target_baseline": 198,
+    "target_resting_height": 154
+  },
+  "running-left": {
+    "shared_row_scale": 0.8191489361702128,
+    "source_baseline": 201,
+    "target_baseline": 198,
+    "target_resting_height": 154
+  },
+  "waving": {
+    "shared_row_scale": 0.7857142857142857,
+    "source_baseline": 202,
+    "target_baseline": 198,
+    "target_resting_height": 154
+  },
+  "jumping": {
+    "shared_row_scale": 0.9746835443037974,
+    "source_baseline": 202,
+    "target_baseline": 198,
+    "target_resting_height": 154
+  },
+  "failed": {
+    "shared_row_scale": 0.7938144329896907,
+    "source_baseline": 202,
+    "target_baseline": 198,
+    "target_resting_height": 154
+  },
+  "waiting": {
+    "shared_row_scale": 0.7897435897435897,
+    "source_baseline": 202,
+    "target_baseline": 198,
+    "target_resting_height": 154
+  },
+  "running": {
+    "shared_row_scale": 0.7857142857142857,
+    "source_baseline": 202,
+    "target_baseline": 198,
+    "target_resting_height": 154
+  },
+  "review": {
+    "shared_row_scale": 0.8020833333333334,
+    "source_baseline": 202,
+    "target_baseline": 198,
+    "target_resting_height": 154
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "pairs": [
+    {
+      "pair": "horizontal-1",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A eyes and mouth cluster against the left head contour; B eyes and mouth cluster against the right contour."
+    },
+    {
+      "pair": "horizontal-2",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A far eye and mouth approach the right silhouette; B far eye and mouth approach the left silhouette."
+    },
+    {
+      "pair": "horizontal-3",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A face landmarks are shifted to the right with broad empty left cheek; B landmarks are shifted left with broad empty right cheek."
+    },
+    {
+      "pair": "horizontal-4",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A eyes and mouth sit right of the head center; B eyes and mouth sit left of the head center."
+    },
+    {
+      "pair": "horizontal-5",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A left eye lies close to the left contour and mouth is leftward; B corresponding face cluster sits at the right contour."
+    },
+    {
+      "pair": "horizontal-6",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A lowered facial cluster is on the right of the head; B facial cluster lies near the left contour."
+    },
+    {
+      "pair": "horizontal-7",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A mouth and eyes are left of the head center; B lowered mouth and eyes are right of the head center."
+    },
+    {
+      "pair": "vertical-1",
+      "A": "down",
+      "B": "up",
+      "reason": "A eyes and mouth are low under a large forehead; B eyes and mouth are high near the ear roots."
+    },
+    {
+      "pair": "vertical-2",
+      "A": "down",
+      "B": "up",
+      "reason": "A facial landmarks are near the lower head edge beneath a broad forehead; B eyes are high and mouth sits in the upper head region."
+    },
+    {
+      "pair": "vertical-3",
+      "A": "up",
+      "B": "down",
+      "reason": "A eyes and mouth sit near the upper right head contour; B facial cluster is low with a broad forehead above it."
+    },
+    {
+      "pair": "vertical-4",
+      "A": "down",
+      "B": "up",
+      "reason": "A facial cluster sits in the lower right of the head with substantial forehead above; B cluster sits high near the right temple."
+    },
+    {
+      "pair": "vertical-5",
+      "A": "down",
+      "B": "up",
+      "reason": "A eyes and mouth occupy the lower left head region; B eyes and mouth are lifted near the upper left contour."
+    },
+    {
+      "pair": "vertical-6",
+      "A": "down",
+      "B": "up",
+      "reason": "A eye line and mouth are low on the left face beneath broad forehead; B eye line and mouth are raised toward the upper left contour."
+    },
+    {
+      "pair": "vertical-7",
+      "A": "up",
+      "B": "down",
+      "reason": "A left eye and mouth are higher along the head contour; B eyes and mouth lie lower with more forehead above."
+    }
+  ]
+}

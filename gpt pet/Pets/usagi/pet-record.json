@@ -1,0 +1,11 @@
+{
+  "id": "pet_6add7180c6b081918cae467ee2d963a3",
+  "name": "우사기",
+  "description": "먼작귀 우사기 — 장난스럽게 팔짱을 끼고, 폴짝 뛰며 함께하는 노란 토끼 친구.",
+  "is_custom": true,
+  "is_active": true,
+  "verified_in_list": true,
+  "sprite_version": 2,
+  "sha256": "c0daa543a94b80e59028caa33bc93d9de9a300010b8b78ff0c4501026637d188",
+  "artifact_location": "local workspace; ChatGPT Library tools unavailable"
+}

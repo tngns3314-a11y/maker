@@ -1,0 +1,18 @@
+{
+  "pairs": [
+    {"pair":"horizontal-1","A":"screen-left","B":"screen-right","reason":"A's eyes and muzzle sit toward the left contour; B's eye and muzzle cluster shifts toward the right contour."},
+    {"pair":"horizontal-2","A":"screen-right","B":"screen-left","reason":"A has the nose near the right edge and open cheek on the left; B has the nose near the left edge and open cheek on the right."},
+    {"pair":"horizontal-3","A":"screen-right","B":"screen-left","reason":"A's far eye and muzzle approach the right silhouette; B's muzzle approaches the left silhouette."},
+    {"pair":"horizontal-4","A":"screen-left","B":"screen-right","reason":"A's face is compressed against the left edge of the head, while B's face is compressed against the right edge."},
+    {"pair":"horizontal-5","A":"screen-left","B":"screen-right","reason":"A shows a broad blank right cheek and left-shifted nose; B shows a broad blank left cheek and right-shifted nose."},
+    {"pair":"horizontal-6","A":"screen-right","B":"screen-left","reason":"Both faces sit low, but A's eyes and muzzle occupy the right side and B's occupy the left side."},
+    {"pair":"horizontal-7","A":"screen-right","B":"screen-left","reason":"A's low-set muzzle is near the right head contour; B's low-set muzzle is left of the head center."},
+    {"pair":"vertical-1","A":"up","B":"down","reason":"A's eyes and muzzle are high on the head with little forehead; B has a large forehead and low-set eyes and muzzle."},
+    {"pair":"vertical-2","A":"up","B":"down","reason":"A's eye line is near the top of the cheek mass, whereas B's eyes and nose are low beneath a broad forehead."},
+    {"pair":"vertical-3","A":"up","B":"down","reason":"A has higher eyes and muzzle relative to the head silhouette; B's facial cluster drops lower and leaves more forehead above it."},
+    {"pair":"vertical-4","A":"up","B":"down","reason":"The distinction is modest: A's face is slightly higher beneath the ears; B's eye and muzzle cluster is lower with more forehead visible."},
+    {"pair":"vertical-5","A":"up","B":"down","reason":"A's eyes sit high near the ear roots and muzzle is above head center; B's eyes and muzzle sit low beneath a rounded forehead."},
+    {"pair":"vertical-6","A":"down","B":"up","reason":"A's face occupies the lower head with a broad blank forehead; B's facial landmarks are lifted toward the upper-left of the head."},
+    {"pair":"vertical-7","A":"down","B":"up","reason":"A's eye and muzzle cluster is lower on the left cheek; B's corresponding landmarks are higher and closer to the ear roots."}
+  ]
+}
